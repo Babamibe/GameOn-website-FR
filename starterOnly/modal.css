@@ -69,10 +69,19 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topnav img{
+    width: 70%;
+  }
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+    color: #ff0000
   }
 }
 
@@ -97,7 +106,6 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
   }
 } 
 
@@ -215,7 +223,7 @@ input {
   display: block;
   margin-top: 7px;
   margin-bottom: 7px;
-  text-align: right;
+  text-align: left;
   line-height: 0.3;
   opacity: 0;
   transition: 0.3s;
@@ -517,6 +525,19 @@ footer {
   }
 }
 
+@media screen and (max-width: 470px){
+  .hero-content {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 200px;
+  }
+  .hero-headline {
+    font-size: 3rem;
+  }
+}
+
 @keyframes modalopen {
   from {
     opacity: 0;
@@ -527,3 +548,28 @@ footer {
   }
 }
 
+.btn-confirm {
+  background: #fe142f;
+  display: block;
+  margin: 0 auto;
+  width: min-content;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 12px 82px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+.confirmation{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 640px;
+  width: 285px;
+  font-weight: 400;
+  font-size: 36px;
+
+}
