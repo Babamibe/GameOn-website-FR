@@ -73,6 +73,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2vw;
+    margin-left: 20px;
   }
   .topnav img{
     width: 70%;
@@ -101,13 +103,24 @@ img {
 
 
 
- @media screen and (max-width: 540px) {
+@media screen and (max-width: 540px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
 } 
+
+@media screen and (max-width: 470px) {
+  .topnav img{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 100px) {
+  .topnav img{
+    min-width: 80px;
+  }
+}
 
 main {
   font-size: 130%;
@@ -330,7 +343,7 @@ input[data-error]::after {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup, .btn-confirm {
   background: #fe142f;
   display: block;
   margin: 0 auto;
@@ -508,7 +521,7 @@ footer {
   }
   .hero-text {
     width: unset;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .hero-img img {
     border-radius: 10px;
@@ -534,6 +547,12 @@ footer {
     min-width: 200px;
   }
   .hero-headline {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero-headline{
     font-size: 3rem;
   }
 }
@@ -548,18 +567,6 @@ footer {
   }
 }
 
-.btn-confirm {
-  background: #fe142f;
-  display: block;
-  margin: 0 auto;
-  width: min-content;
-  border-radius: 7px;
-  font-size: 1rem;
-  padding: 12px 82px;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-}
 
 .confirmation{
   display: flex;
@@ -572,4 +579,8 @@ footer {
   font-weight: 400;
   font-size: 36px;
 
+}
+
+.btn-confirm{
+  width: 220px;
 }

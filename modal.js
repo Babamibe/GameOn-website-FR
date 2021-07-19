@@ -223,7 +223,7 @@ function sayThanks(){
   const confirmButton = document.createElement("div");
   modalBody[0].appendChild(confirmMessage);
   modalBody[0].appendChild(confirmButton);
-  confirmMessage.setAttribute("class", "content");
+  confirmMessage.setAttribute("class", "confirmation");
   confirmMessage.innerHTML = "Merci !<br>Nous avons reçu votre réservation.";
   confirmButton.className = "btn-confirm";
   confirmButton.innerHTML = "Fermer";
